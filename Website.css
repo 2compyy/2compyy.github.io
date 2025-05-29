@@ -1,0 +1,68 @@
+/* Full page center */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  color: white;
+}
+
+/* Outer wrapper centering the UI box */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* The black rounded UI box 500x500px */
+.ui-box {
+  background: #000;
+  width: 500px;
+  height: 500px;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  
+  /* center text inside box vertically and horizontally */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+  padding: 20px;
+}
+
+/* Text styles */
+h1 {
+  font-size: 4rem;
+  margin: 0 0 10px 0;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 0 0 20px 0;
+  opacity: 0.8;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: gray;
+  color: white;
+}
